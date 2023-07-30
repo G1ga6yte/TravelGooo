@@ -1,0 +1,201 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.footer-block{
+  .links-container{
+
+    @include screen($max-width-576){
+      flex-direction: column-reverse;
+    }
+
+
+    .logo-block{
+      @include screen($max-width-576){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .travel-goo{
+        .travel-goo-span{
+          display: block;
+          color: black;
+          font-family: 'Laila', sans-serif;
+          text-align: center;
+          line-height: 1.1;
+        }
+        .text-travel{
+          font-size: 24px;
+          @include screen($max-width-1440){
+            font-size: 22px;
+          }
+          @include screen($max-width-768){
+            font-size: 20px;
+          }
+        }
+        .text-goo{
+          font-size: 32px;
+          @include screen($max-width-1440){
+            font-size: 28px;
+          }
+          @include screen($max-width-768){
+            font-size: 26px;
+          }
+        }
+      }
+      .logo-block-prg{
+        font-size: 13px;
+        font-weight: 500;
+        color: #5E6282;
+        margin-top: 30px;
+        max-width:200px;
+        text-align: center;
+        @include screen($max-width-1440){
+          font-size: 12px;
+          max-width: 150px;
+        }
+        @include screen($max-width-768){
+          max-width: 100px;
+        }
+        @include screen($max-width-576){
+          margin: 0;
+          max-width: 200px;
+        }
+      }
+    }
+
+    .ul-links-block{
+      @include screen($max-width-576){
+        margin: 20px auto;
+      }
+      .section-block{
+        margin: 0 75px;
+
+        @include screen($max-width-1440){
+          margin: 0 30px;
+        }
+        @include screen($max-width-768){
+          margin: 0 15px;
+        }
+        @include screen($max-width-576){
+          margin: 0 30px;
+        }
+        @include screen($max-width-440){
+          margin: 0 15px;
+        }
+        .section-h4{
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 40px;
+          @include screen($max-width-1440){
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+          @include screen($max-width-768){
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+        .section-link{
+          cursor: pointer;
+          list-style-type: none;
+          margin-bottom: 25px;
+          color: #5E6282;
+          font-size: 18px;
+          @include screen($max-width-1440){
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+          @include screen($max-width-768){
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+
+
+      }
+    }
+
+    .contacts-web{
+      @include screen($max-width-576){
+        display: flex;
+        justify-content: space-around;
+      }
+      .facebook-instagram-logos{
+
+        .instagram-link-block {
+          position: relative;
+          .instagram{
+            display: block;
+            position: absolute;
+            left: 20px;
+            top:-25px;
+          }
+        }
+      }
+      .discover-our-app{
+        font-size: 20px;
+        color: #5E6282;
+        margin: 20px 0;
+        @include screen($max-width-1440){
+          font-size: 18px;
+        }
+        @include screen($max-width-768){
+          font-size: 16px;
+        }
+        @include screen($max-width-576){
+          font-size: 14px;
+        }
+      }
+      .stores-links{
+        @include screen($max-width-1440){
+          display: flex;
+          flex-direction: column;
+        }
+        @include screen($max-width-576){
+          flex-direction: row;
+          align-items: center;
+        }
+        @include screen($max-width-440){
+          flex-direction: column;
+        }
+        .google-play-block{
+          align-items: center;
+          background-color: #080809;
+          border-radius: 17px;
+          margin-right: 15px;
+          padding: 0 10px;
+          @include screen($max-width-1440){
+            padding: 10px;
+          }
+          @include screen($max-width-576){
+            max-height: 50px;
+            padding: 10px 20px;
+          }
+          @include screen($max-width-440){
+            margin: 0 auto;
+          }
+          .google-play-img{
+            margin: auto 10px;
+            @include screen($max-width-1440){
+              margin: auto 6px;
+            }
+            @include screen($max-width-576){
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rights-text{
+    text-align: center;
+    margin: 70px auto;
+    display: block;
+    color: #5E6282;
+    font-size: 14px;
+    .right-link{
+      color: #5E6282;
+      font-size: 14px;
+    }
+  }
+}

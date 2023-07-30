@@ -1,0 +1,266 @@
+@import "src/assets/styles/variable";
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+
+
+.header-block{
+    background-image: url(../../assets/images/header-bck.png);
+    width: 100%;
+    .header-inside-block{
+      padding-bottom: 500px;
+      position: relative;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.81) 0%, rgba(72, 72, 72, 0.00) 31.25%, rgba(158, 158, 158, 0.00) 77.60%, #FFF 85.42%);
+      @include screen($max-width-1440) {
+        padding-bottom: 300px;
+      }
+      @include screen($max-width-1024){
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.81) 1%, rgba(72, 72, 72, 0) 30.25%, rgba(158, 158, 158, 0) 85.6%, #FFF 93.42%)
+      }
+      @include screen($max-width-768) {
+        padding-bottom: 150px;
+      }
+      .navigation-block{
+          padding: 30px 15px;
+          @include screen($max-width-1440) {
+              padding: 25px 80px;
+          }
+        @include screen($max-width-440) {
+          padding: 20px 30px;
+        }
+          .travel-goo{
+              .travel-goo-span{
+                display: block;
+                color: $whiteC;
+                font-family: 'Laila', sans-serif;
+                text-align: center;
+                line-height: 1.1;
+
+              }
+            .text-travel{
+              font-size: 24px;
+              @include screen($max-width-1440) {
+                font-size: 20px;
+              }
+              @include screen($max-width-768) {
+                font-size: 18px;
+              }
+              @include screen($max-width-440) {
+                font-size: 15px;
+              }
+            }
+            .text-goo{
+              font-size: 32px;
+              @include screen($max-width-1440) {
+                font-size: 26px;
+              }
+              @include screen($max-width-768) {
+                font-size: 22px;
+              }
+              @include screen($max-width-440) {
+                font-size: 20px;
+              }
+            }
+          }
+          .navigation-buttons{
+            @include screen($max-width-768) {
+              display: none;
+            }
+            .nav-buttons-link{
+              text-decoration: none;
+              color: $whiteC;
+              font-size: 20px;
+              font-weight: 500;
+              font-family: 'Open-sans-bold', sans-serif;
+              margin: 30px;
+              @include screen($max-width-1440) {
+                font-size: 18px;
+                margin: 15px;
+              }
+              @include screen($max-width-768) {
+                font-size: 16px;
+                margin: 10px 15px;
+              }
+            }
+          }
+          .favorites-login-block{
+            display: flex;
+            align-items: center;
+            .log-in{
+              @include screen($max-width-1440) {
+                  img{
+                    width: 35px;
+                  }
+              }
+              @include screen($max-width-440) {
+                img{
+                  width: 25px;
+                }
+              }
+            }
+            .favorites-link{
+                margin: 0 30px;
+              @include screen($max-width-1440) {
+                margin: 0 20px;
+                img{
+                  width: 30px;
+                }
+              }
+              @include screen($max-width-768) {
+                margin: 0 10px;
+              }
+              @include screen($max-width-440) {
+                  img{
+                    width: 25px;
+                  }
+              }
+            }
+            .nav-menu-button{
+              border: none;
+              flex-direction: column;
+              background-color: transparent;
+              margin-left: 10px;
+              display: none;
+              @include screen($max-width-768) {
+                display: flex;
+              }
+
+              .menu-line{
+                width: 30px;
+                height: 2px;
+                background-color: #FFFFFF;
+                margin: 5px 0;
+                @include screen($max-width-440) {
+                  margin: 4px 0;
+                  width: 20px;
+                }
+              }
+              .menu-line2{
+                width: 20px;
+                @include screen($max-width-440) {
+                  width: 15px;
+                }
+              }
+            }
+          }
+
+
+
+        }
+      .header-content{
+          align-items: center;
+            .header-h1{
+              font-size: 75px;
+              color: $whiteC;
+              width: 60%;
+              margin: 300px auto 50px auto;
+              font-family: 'Open-sans-bold', sans-serif;
+              text-align: center;
+              @include screen($max-width-1440) {
+                margin: 200px auto 50px auto;
+                width: 70%;
+              }
+              @include screen($max-width-1440) {
+                font-size: 60px;
+              }
+              @include screen($max-width-768) {
+                font-size: 45px;
+                margin: 100px auto 50px auto;
+                width: 80%;
+              }
+              @include screen($max-width-440) {
+                font-size: 30px;
+              }
+            }
+          .header-paragraph{
+            font-size: 16px;
+            color: $whiteC;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            @include screen($max-width-768) {
+              font-size: 14px;
+              width: 60%;
+            }@include screen($max-width-440) {
+                width: 80%;
+                font-size: 12px;
+             }
+          }
+          .header-button{
+            font-size: 24px;
+            margin: 50px auto;
+            @include screen($max-width-1440) {
+              font-size: 20px;
+            }
+            @include screen($max-width-768) {
+              font-size: 18px;
+            }
+            @include screen($max-width-440) {
+              font-size: 14px;
+            }
+          }
+        }
+      .minisize-phone-menu{
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 50px;
+        transition: 0.5s ease-in-out;
+        display: none;
+        z-index: 1111;
+        @include screen($max-width-768) {
+          display: flex;
+          //display: none;
+        }
+        @include screen($max-width-440) {
+          width: 150px;
+        }
+        @include screen($max-width-440) {
+          padding: 50px 20px;
+        }
+        .nav-buttons-link{
+          color: #FFFFFF;
+          text-decoration: none;
+          margin-top: 20px;
+          @include screen($max-width-440) {
+            font-size: 14px;
+          }
+        }
+        .close-button{
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          border: none;
+          .btn-span{
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 1px;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            background-color: white;
+          }
+          .button-span1{
+            transform: rotate(45deg);
+          }
+          .button-span2{
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+
+      .active{
+        transform: translateX(0);
+      }
+      .disabled{
+        transform: translateX(-150%);
+      }
+    }
+}

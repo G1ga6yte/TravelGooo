@@ -1,0 +1,244 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.booking-steps-block {
+  padding: 15px;
+
+  .booking-span {
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-family: 'Open-sans-light', sans-serif;
+    @include screen($max-width-1024){
+      font-size: 22px;
+    }
+    @include screen($max-width-576){
+      font-size: 20px;
+    }
+  }
+
+  .steps-block {
+    margin: 100px auto;
+
+    @include screen($max-width-768) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .steps-list {
+      width: 35%;
+      @include screen($max-width-768) {
+        width: 80%;
+        margin: 20px auto;
+      }
+      @include screen($max-width-440) {
+        width: 95%;
+        margin: 20px auto;
+      }
+
+
+
+      .steps-item {
+        margin-bottom: 90px;
+        @include screen($max-width-1024) {
+          margin-bottom: 50px;
+        }
+
+        .item-text-block {
+          margin-left: 30px;
+          @include screen($max-width-1024) {
+            margin-left: 15px;
+          }
+
+          .item-name {
+            font-size: 16px;
+            font-family: 'Open-sans-bold', sans-serif;
+            color: #5E6282;
+            margin-bottom: 5px;
+            @include screen($max-width-1024) {
+              font-size: 15px;
+            }
+            @include screen($max-width-440){
+              font-size: 14px;
+            }
+          }
+
+          .item-description {
+            font-size: 16px;
+            font-family: 'Open-sans-light', sans-serif;
+            color: #5E6282;
+            line-height: 1.2;
+            @include screen($max-width-1024) {
+              font-size: 14px;
+            }
+            @include screen($max-width-440){
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .trip-to-grace {
+      padding: 25px;
+      border-radius: 25px;
+      @include screen($max-width-768){
+        margin: 0 auto;
+      }
+      @include screen($max-width-440){
+        padding: 0;
+      }
+
+      .trip-to-greece-img{
+        @include screen($max-width-440){
+          width: 250px;
+        }
+      }
+
+      .trip-text-block {
+        margin-top: 20px;
+
+
+
+
+        .data-rome-block {
+          margin-top: 20px;
+          @include screen($max-width-768){
+            justify-content: start;
+            margin: 20px auto;
+          }
+
+
+          .data-icons-block {
+            .trip-to-greece-h4 {
+              font-size: 18px;
+              font-weight: 500;
+              letter-spacing: 1px;
+              font-family: popins, sans-serif;
+              margin-bottom: 20px;
+              @include screen($max-width-1024) {
+                font-size: 16px;
+              }
+
+            }
+
+            .trip-data {
+              font-size: 16px;
+              font-family: 'popins', sans-serif;
+              font-weight: 500;
+              color: #84829A;
+              margin-bottom: 25px;
+              @include screen($max-width-1024) {
+                font-size: 14px;
+              }
+            }
+
+            .icons-block {
+              width: 150px;
+              @include screen($max-width-1024) {
+                width: 120px;
+              }
+            }
+          }
+
+          .rome-block {
+            margin-left: 30px;
+            border-radius: 25px;
+            padding: 15px;
+            @include screen($max-width-1024) {
+              margin-left: 20px;
+              padding: 10px;
+            }
+            @include screen($max-width-440){
+              padding: 0;
+              margin-left: 10px;
+            }
+
+            &:hover {
+              outline: 2px solid royalblue;
+            }
+
+            .rome-img {
+              border-radius: 50%;
+            }
+
+            .rome-text-block {
+              margin-left: 15px;
+
+              .ongoing-span {
+                font-size: 14px;
+                font-weight: 500;
+                color: #84829A;
+                @include screen($max-width-1024) {
+                  font-size: 12px;
+                }
+              }
+
+              .rome-h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 5px;
+                @include screen($max-width-1024) {
+                  font-size: 16px;
+                }
+              }
+
+              .completed-percent {
+                font-weight: 600;
+                font-size: 14px;
+                margin-top: 15px;
+
+                .percent {
+                  color: #8A79DF;
+                  font-weight: 500;
+                  margin-right: 5px;
+                }
+              }
+
+              .completed-line {
+                width: 70px;
+                height: 4px;
+                border-radius: 5px;
+                background-color: #8A79DF;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+
+        .people-going-block {
+          padding: 20px;
+          @include screen($max-width-1024) {
+            padding: 10px;
+          }
+          @include screen($max-width-768){
+            justify-content: start;
+          }
+
+
+          .icon-people {
+            .people-going-span {
+              font-size: 16px;
+              color: #84829A;
+              font-weight: 500;
+              margin-left: 10px;
+              @include screen($max-width-1024) {
+                font-size: 14px;
+              }
+              @include screen($max-width-768){
+                margin-right: 50px;
+              }
+            }
+          }
+        }
+      }
+
+      &:hover {
+        outline: 2px solid royalblue;
+      }
+    }
+
+
+  }
+}

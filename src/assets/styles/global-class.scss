@@ -1,0 +1,146 @@
+@import "variable.scss";
+@import "mixin.scss";
+
+.G-container{
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.G-background-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.G-flex{
+  display: flex;
+}
+.G-flex-wrap{
+  flex-wrap: wrap;
+}
+.G-flex-column{
+  flex-direction: column;
+}
+.G-flex-between{
+  justify-content: space-between;
+}
+.G-flex-around{
+  justify-content: space-around;
+}
+.G-button{
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  padding: 12px 30px;
+  font-weight: 500;
+  color: $whiteC;
+  display: block;
+  background-color: $grayC;
+  border-radius: 10px;
+  transition: 0.5s all;
+  &:hover{
+    background-color: $greenC;
+    transition: 0.5s all;
+  }
+}
+.G-section-header{
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  @include screen($max-width-768) {
+    font-size: 35px !important;
+  }
+  @include screen($max-width-576) {
+    font-size:30px !important;
+  }
+  @include screen($max-width-440) {
+    font-size: 25px !important;
+  }
+}
+.G-service-item{
+  width: 30%;
+  border-radius: 15px;
+  background-color: $whiteC;
+  padding: 40px;
+  cursor: pointer;
+  @include screen($max-width-768) {
+    padding: 25px;
+  }
+  @include screen($max-width-576) {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .service-icon{
+    margin-left: 10px;
+  }
+  .item-header{
+    margin: 35px 0 20px 5px;
+    font-size: 24px;
+    font-family: 'Open-sans-bold',sans-serif;
+    @include screen($max-width-768) {
+      font-size: 20px;
+      margin: 25px 0 15px 5px;
+    }
+  }
+  .item-about-text{
+    font-size: 16px;
+    font-family: 'Open-sans-light',sans-serif;
+    font-weight: 400;
+    @include screen($max-width-768) {
+      font-size: 14px;
+    }
+  }
+
+  &:hover{
+    outline:2px solid royalblue;
+  }
+}
+
+.G-rating-item{
+  width: 20%;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 40px 0 20px 0;
+
+  @include screen($max-width-768){
+    width: 45%;
+    margin-top: 20px;
+  }
+  @include screen($max-width-576){
+    padding: 30px 0 15px 0;
+  }
+  @include screen($max-width-576){
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .item-rate{
+    font-family: 'Open-sans-bolder', sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    line-height: 1.6;
+    @include screen($max-width-768){
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    @include screen($max-width-576){
+      font-size: 25px;
+    }
+  }
+  .ratings-item-h3{
+    font-family: 'Open-sans-lighter', sans-serif;
+    font-size: 20px;
+    max-width: 100px;
+    text-align: center;
+    @include screen($max-width-768){
+      font-size: 18px;
+    }
+    @include screen($max-width-576){
+      font-size: 16px;
+    }
+  }
+
+  &:hover{
+    outline:2px solid royalblue;
+  }
+}

@@ -1,0 +1,139 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.packages-block{
+    padding: 0 15px 100px 15px;
+  .buttons-list{
+    margin: 50px auto 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+
+    .packages-button{
+      font-size: 20px;
+      @include screen($max-width-1024){
+        font-size: 18px;
+        margin: 10px 10px;
+      }
+      @include screen($max-width-768){
+        font-size: 16px;
+      }
+      @include screen($max-width-576){
+        font-size: 14px;
+      }
+    }
+  }
+  .packages-list{
+    @include screen($max-width-576){
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .packages-item{
+      cursor: pointer;
+      width: 30%;
+      border-radius: 20px;
+      position: relative;
+      @include screen($max-width-576){
+        width: 300px;
+        margin: 15px auto;
+
+      }
+      .item-img{
+        @include screen($max-width-576){
+
+        }
+      }
+      .item-text-block{
+        padding: 15px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 340px;
+        @include screen($max-width-1024){
+            top: 280px;
+        }
+        @include screen($max-width-768){
+            top: 180px;
+        }
+        @include screen($max-width-576){
+            top: 220px;
+        }
+        .length-price-block{
+          margin-bottom: 25px;
+          @include screen($max-width-768){
+            margin-bottom: 15px;
+          }
+          .length-span, .price-span{
+            font-size: 20px;
+            font-family: 'Open-sans-light', sans-serif;
+            @include screen($max-width-1024){
+              font-size: 16px;
+            }
+            @include screen($max-width-768){
+              font-size: 14px;
+            }
+          }
+        }
+        .item-description{
+          font-size: 16px;
+          font-family: 'Open-sans-bold', sans-serif;
+          margin-bottom: 30px;
+          @include screen($max-width-1024){
+            font-size: 14px;
+          }
+          @include screen($max-width-768){
+            font-size: 12px;
+            margin-bottom: 15px;
+          }
+        }
+        .location-more-block{
+          .location-block{
+            .country-name{
+              margin-left: 10px;
+              font-size: 20px;
+              font-family: 'Open-sans-bold', sans-serif;
+              @include screen($max-width-1024){
+                font-size: 18px;
+              }
+              @include screen($max-width-768){
+                font-size: 15px;
+                margin-left: 0;
+              }
+            }
+          }
+          .know-more-link{
+            color: black;
+            font-family: 'Open-sans-bold', sans-serif;
+            font-size: 16px;
+            @include screen($max-width-1024){
+              font-size: 14px;
+            }
+            @include screen($max-width-768){
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .discover-more-btn{
+    margin:100px auto;
+    font-size: 24px;
+    font-family: 'Open-sans-bold', sans-serif;
+    @include screen($max-width-1440){
+      margin: 150px auto 0 auto;
+    }
+    @include screen($max-width-1024){
+      margin: 200px auto 0 auto;
+      font-size: 20px;
+    }
+    @include screen($max-width-768){
+      margin: 150px auto 0 auto;
+    }
+    @include screen($max-width-576){
+        margin: 50px auto 0 auto;
+    }
+  }
+}

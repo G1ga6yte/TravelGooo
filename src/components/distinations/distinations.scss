@@ -1,0 +1,138 @@
+@import "../../assets/styles/variable.scss";
+@import "../../assets/styles/mixin.scss";
+
+
+.distination-block{
+  padding: 0 15px 100px 15px;
+  overflow: hidden;
+  .distination-inside-block{
+    margin-top: 70px;
+    position: relative;
+    .map-block{
+      width: 600px;
+      overflow: hidden;
+      @include screen($max-width-1024){
+        display: none;
+      }
+      .map-img{
+        position: relative;
+        width: 100%;
+        .map-image{
+          position: absolute;
+          left: -470px;
+          height: 780px;
+          width: 1400px;
+          background-repeat: no-repeat;
+
+        }
+        .map-point{
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          outline: 1px solid black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .map-point-blue{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: dodgerblue;
+          }
+        }
+
+
+        .map-point-1{
+          top: 390px;
+          right: 325px;
+        }
+        .map-point-2{
+          top: 485px;
+          right: 220px;
+        }
+        .map-point-3{
+          top: 675px;
+          right: 25px;
+        }
+      }
+    }
+    .countries-block{
+      width: 45%;
+
+      @include screen($max-width-1024){
+        width: 95%;
+        margin: 0 auto;
+        background-image: url("../../assets/images/world_map.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .country-item{
+        cursor: pointer;
+        padding-right: 40px;
+        margin-top: 40px;
+        align-items: center;
+        font-family: 'Open-sans-bold', sans-serif;
+        border-radius: 15px;
+
+        @include screen($max-width-1024){
+          width: 30% ;
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+        }
+        @include screen($max-width-768){
+          width: 45%;
+        }
+        @include screen($max-width-576){
+          width: 80%;
+        }
+
+        &:hover{
+          outline: 2px solid royalblue;
+        }
+
+        .item-img{
+            @include screen($max-width-1024){
+              width: 180px;
+            }
+        }
+        .country-item-h3{
+          font-size: 20px;
+          @include screen($max-width-1024){
+            margin: 10px auto;
+          }
+          @include screen($max-width-768){
+            font-size: 18px;
+          }
+          @include screen($max-width-440){
+            font-size: 16px;
+          }
+        }
+        .country-item-text{
+          font-size: 20px;
+          max-width: 100px;
+          @include screen($max-width-1024){
+            max-width: 200px;
+          }
+          @include screen($max-width-768){
+            font-size: 18px;
+          }
+          @include screen($max-width-440){
+            font-size: 16px;
+          }
+        }
+        .right-navigation{
+          @include screen($max-width-1024){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

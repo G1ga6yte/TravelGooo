@@ -1,0 +1,24 @@
+@import "../../assets/styles/mixin.scss";
+@import "../../assets/styles/variable.scss";
+
+.ratings-block{
+  padding-bottom: 100px;
+  .ratings-header{
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .ratings-prg{
+    max-width: 500px;
+    margin: 20px auto 120px auto;
+    text-align: center;
+    font-family: 'Open-sans-light', sans-serif;
+    font-size: 16px;
+    @include screen($max-width-1024){
+      font-size: 15px;
+      margin: 20px auto 80px auto;
+    }
+  }
+  .ratings-list{
+    padding: 15px;
+  }
+}
